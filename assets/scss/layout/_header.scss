@@ -1,0 +1,38 @@
+.heroImgSection {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      $color-primary-light-op,
+      $color-primary-dark-op
+    ),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  @extend %atCenter;
+  .logoBox {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+
+    .logo {
+      // height : 3.5rem;
+      width: 7rem;
+      display: inline-block;
+
+      img {
+        // height : 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  .heroHeading {
+
+    .heroHeadingMain {
+      text-transform: uppercase;
+    }
+  }
+}
